@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reddit Posts Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="main-header">
+    fuente de fotos de breathe code
+  </header>
+  <div class="container">
+    <div class="post">
+      <span class="post-date">2024-05-18</span>
+      <div class="post-content">
+        <div class="post-info">
+          <h2 class="post-title">Cuidando el futuro: manos que protegen la vida</h2>
+          <img src="imagen1.jpg" alt="Manos cuidando planta" class="post-image">
+          <p class="post-description">Un pequeño brote en manos humanas simboliza la importancia de cuidar el medio ambiente y proteger la vida para las próximas generaciones.</p>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <span class="post-date">2024-05-15</span>
+      <div class="post-content">
+        <div class="post-info">
+          <h2 class="post-title">Paisajes majestuosos de montaña</h2>
+          <img src="imagen2.jpg" alt="Montañas y bosque" class="post-image">
+          <p class="post-description">Imponentes montañas bajo un cielo azul y rodeadas de bosques verdes, un destino perfecto para los amantes de la naturaleza y la aventura.</p>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <span class="post-date">2024-05-10</span>
+      <div class="post-content">
+        <div class="post-info">
+          <h2 class="post-title">El lobo gris en su hábitat natural</h2>
+          <img src="imagen3.jpg" alt="Lobo gris" class="post-image">
+          <p class="post-description">El lobo gris es un símbolo de la vida salvaje y el equilibrio ecológico en los bosques. Su presencia es vital para mantener la biodiversidad.</p>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <span class="post-date">2024-05-05</span>
+      <div class="post-content">
+        <div class="post-info">
+          <h2 class="post-title">Un amigo fiel en la playa</h2>
+          <img src="imagen4.jpg" alt="Perro en la playa" class="post-image">
+          <p class="post-description">La alegría de un perro disfrutando la brisa marina y el sol en la playa, recordándonos el valor de la amistad y la compañía animal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <span class="post-date">2024-05-01</span>
+      <div class="post-content">
+        <div class="post-info">
+          <h2 class="post-title">La flor gigante de la selva: Rafflesia</h2>
+          <img src="imagen5.jpg" alt="Flor Rafflesia" class="post-image">
+          <p class="post-description">La Rafflesia es la flor individual más grande del mundo, famosa por su tamaño y su peculiar aroma, una maravilla de las selvas asiáticas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Animación del header al hacer scroll
+    let lastScroll = 0;
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', function() {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll && currentScroll > 50) {
+        header.classList.add('hide');
+      } else {
+        header.classList.remove('hide');
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

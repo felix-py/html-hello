@@ -1,0 +1,43 @@
+/* filepath: c:\Users\trabajo\Documents\4geeks\html-hello\styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.post-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.post-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.post:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
